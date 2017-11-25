@@ -10,4 +10,12 @@ function capitalize(str) {
     .join(' ')
 }
 
+function capitalize2(str) {
+  const newStr = str.split(' ')
+  const array = []
+  newStr.forEach(word => array.push(word[0].toUpperCase().concat(word.slice(1))))
+  return array.join(' ')
+}
+
 console.log(capitalize('just another diamond day'))
+console.log(capitalize2('just another diamond day'))
