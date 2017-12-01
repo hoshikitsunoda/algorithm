@@ -1,8 +1,3 @@
-// isValidWalk takes an array, returns true if
-// total walk time is 10 mins and be at the starting position, else false.
-// set x and y variable to 0, for loop and count up or down
-// according to direction. check if length is 10 and x and y are 0.
-
 function isValidWalk(array) {
   let x = 0
   let y = 0
