@@ -1,6 +1,3 @@
-// DNAStrand takes a string, return a string with
-// complementary DNA to each letter.
-
 function DNAStrand(string) {
   let result = ''
   const split = string.split('')
