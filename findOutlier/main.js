@@ -1,8 +1,3 @@
-// findOutlier takes an array of either all odd or all even
-// integers exept one N, find N and return.
-// Create odd and even empty array, for loop thru the initial array,
-// if array[i] is odd push to odd, else to even.
-
 function findOutlier(array) {
   const odd = []
   const even = []
