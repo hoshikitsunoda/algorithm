@@ -1,8 +1,3 @@
-// likes takes array of names, returns a string of sentence,
-// 'name likes this'/'name and name like this'.
-// Iterate thru the array, check how many names are in array,
-// complete the sentence.
-
 function likes(array) {
   if(!array.length) {
     return "no one likes this"
