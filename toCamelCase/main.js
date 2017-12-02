@@ -1,6 +1,3 @@
-// toCamelCase takes string, returns a new string
-// with all words combined and first letter capitalized,
-
 function toCamelCase(string) {
   if(!string) return ''
   const split = string.split(/[ \-_]+/)
