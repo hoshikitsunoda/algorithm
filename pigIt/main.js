@@ -1,6 +1,3 @@
-// pigIt takes a string, move the first letter of each word
-// to the end of it then add 'ay' to the end of the word.
-
 function pigIt(string) {
   const split = string.split(' ')
   const pigged = split.map(word => {
