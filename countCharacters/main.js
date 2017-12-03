@@ -1,6 +1,3 @@
-// countCharacters takes string, count the character
-// and returns a object with character as key and count as value.
-
 function countCharacters(string) {
   if(!string) return {}
   const count = {}
