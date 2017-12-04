@@ -1,6 +1,3 @@
-// filterList takes an array, filter out the strings
-// returns the new array with only the non-negative integers.
-
 function filterList(array) {
   const result = []
   array.forEach(item => {
