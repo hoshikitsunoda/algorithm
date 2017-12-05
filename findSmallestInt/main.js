@@ -1,5 +1,3 @@
-// findSmallestInt takes an array of integers and returns the smallest integer.
-
 function findSmallestInt(array) {
   return array.sort((x, y) => x - y)[0]
 }
