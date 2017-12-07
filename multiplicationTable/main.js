@@ -1,6 +1,3 @@
-// multiplicationTable takes two numbers, creates Multiplication table,
-// returns array sized according to the number given as second parameter.
-
 function multiplicationTable(row, col) {
   const result = []
   for(let i = 0; i < row; i++) {
