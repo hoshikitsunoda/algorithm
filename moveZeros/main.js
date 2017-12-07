@@ -1,8 +1,3 @@
-// moveZeros takes an array, finds 0s and adds them to the end of array.
-// The rest of elements order is preserved.
-// const two empty array variables. For loop and push 0 to one array,
-// the rest to another array. concat both arrays.
-
 function moveZeros(array) {
   const popped = []
   const remainder = []
