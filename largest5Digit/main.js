@@ -1,5 +1,3 @@
-// largest5Digit takes series of digit, find largest 5 digits and return it.
-
 function largest5Digit(number) {
   const stringNum = number.toString()
   let max = parseInt(stringNum.slice(0, 5))
