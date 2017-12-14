@@ -1,7 +1,3 @@
-// persistence takes number its multiplicative persistence,
-// which is the number of times you must multiply the digits in num
-// until you reach a single digit.
-
 function persistence(number) {
   let split = number.toString().split('')
   let count = 0
@@ -14,5 +10,5 @@ function persistence(number) {
   return count
 }
 
-console.log(persistence(39));  // should return 3
-console.log(persistence(999)); // should return 4
+console.log(persistence(39))
+console.log(persistence(999))
