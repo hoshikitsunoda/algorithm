@@ -1,7 +1,3 @@
-// getElement takes an array and return an element from
-// the multidimensional array (length > 0) by the specified
-// indices (length > 0).
-
 function getElement(array, index) {
   return index.reduce((accumulator, current) => {
     return accumulator[current]
