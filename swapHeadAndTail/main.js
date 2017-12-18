@@ -1,8 +1,3 @@
-// swapHeadAndTail takes an array of numbers,
-// the head (the first half) of array moves to the end,
-// the tail (the second half) moves to the start.
-// The middle element (if it exists) leaves on the same position.
-
 function swapHeadAndTail(array) {
   if (array.length == 1) return array
   var n = Math.floor(array.length / 2)
