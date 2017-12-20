@@ -1,6 +1,3 @@
-// getZodiacSign takes day and month as parameter,
-// returns the zodiac sign based on the parameter.
-
 function getZodiacSign(day, month) {
   switch(month) {
     case 1:
