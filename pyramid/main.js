@@ -1,5 +1,3 @@
-// Given a number n you print a pyramid with n floors.
-
 function pyramid(number) {
   let result = ""
   for(let i = 0; i < number; i++) {
