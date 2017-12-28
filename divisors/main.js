@@ -1,8 +1,3 @@
-// Create a function named divisors/Divisors that takes
-// an integer and returns an array with all of the integer's
-// divisors(except for 1 and the number itself).
-// If the number is prime return the string '(integer) is prime'
-
 function isPrime(number) {
     var start = 2;
     while (start <= Math.sqrt(number)) {
