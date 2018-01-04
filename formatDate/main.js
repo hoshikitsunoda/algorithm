@@ -1,7 +1,3 @@
-// Write a function that converts user entered date formatted as M/D/YYYY
-// to a format required by an API (YYYYMMDD). The parameter "userDate" and
-// the return value are strings.
-
 function formatDate(userDate){
   const split = userDate.split('/')
   let month = split[0]
