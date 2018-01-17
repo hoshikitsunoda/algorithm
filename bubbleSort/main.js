@@ -1,7 +1,3 @@
-// Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted,
-// compares each pair of adjacent items and swaps them if they are in the wrong order.
-// The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
-
 var array = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8]
 
 function swap(array, i, j) {
