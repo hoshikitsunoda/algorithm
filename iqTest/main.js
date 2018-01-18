@@ -1,7 +1,3 @@
-// write a program that among the given numbers finds one that is different in evenness,
-// and return a position of this number.
-// loop thru numbers and find different number, store it as variable then return indexof that number.
-
 function iqTest(numbers) {
   const split = numbers.split(' ')
   let even = []
