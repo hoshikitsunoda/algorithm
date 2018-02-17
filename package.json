@@ -4,6 +4,7 @@
   "description": "Algorithm challenge from freeCodeCamp and etc.",
   "main": "index.js",
   "scripts": {
+    "tdd": "mocha -w *.test.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
