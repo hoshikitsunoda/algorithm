@@ -5,7 +5,7 @@ const encryptThis = (str: string): string => {
     .map((item: string) => {
       const firstLetterAscii: number = item.substring(0, 1).charCodeAt(0)
       const split: any = item.substring(1).split('')
-      let temp: number = 0
+      let temp: string = ''
       temp = split[0]
       split[0] = split[split.length - 1]
       split[split.length - 1] = temp
