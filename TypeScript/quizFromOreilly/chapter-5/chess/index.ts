@@ -18,9 +18,17 @@ class Game {
 
 abstract class Piece {
   protected position: Position
-  constructor(private readonly color: Color, file: BoardFile, rank: BoardRank) {
+  constructor(
+    protected readonly color: Color,
+    file: BoardFile,
+    rank: BoardRank
+  ) {
     this.position = new Position(file, rank)
     this.color
+  }
+
+  take() {
+    console.log('take Piece')
   }
 
   moveTo(position: Position) {
@@ -42,14 +50,22 @@ class Position {
 }
 
 class King extends Piece {
+  constructor(protected color: Color, file: BoardFile, rank: BoardRank) {
+    super(color, file, rank)
+  }
   canMoveTo(position: Position) {
     let distance = this.position.distanceFrom(position)
     return distance.rank < 2 && distance.file < 2
   }
+
+  take() {
+    console.log('take King')
+    super.take()
+  }
 }
 
-const kingPin = new Game()
-console.log(kingPin)
+const kingPin = new King('White', 'B', 1)
+console.log(kingPin.take())
 
 // class Queen extends Piece {}
 
