@@ -106,7 +106,55 @@ function f(a: A2) {
 const updatedA2 = new A2()
 updatedA2.updateX(20)
 
-console.log(f(updatedA2))
-console.log(f(new B2()))
+// console.log(f(updatedA2))
+// console.log(f(new B2()))
 
 // f({x: 1})
+
+// 5.6
+type State = {
+  [key: string]: string | {}
+}
+
+class StringDatabase {
+  // constructor(public state: State = {}) {}
+  state: State = {}
+  get(key: string): string | {} | null {
+    return key in this.state ? this.state[key] : null
+  }
+
+  set(key: string, value: string | State): void {
+    this.state[key] = value
+  }
+
+  static from(state: State) {
+    let db = new StringDatabase()
+    for (let key in state) {
+      db.set(key, state[key])
+    }
+    return db
+  }
+}
+
+interface StringDatabaseConstructor {
+  new (state?: State): StringDatabase
+  from(state: State): StringDatabase
+}
+
+const testDB = new StringDatabase()
+testDB.set('ing', { apple: 5 })
+// console.log(typeof StringDatabase)
+// console.log(testDB.get('ing'))
+
+// 5.8 mixin
+type ClassConstructor = new (...args: any[]) => {}
+
+function withEZDebug<C extends ClassConstructor>(Class: C) {
+  return class extends Class {
+    constructor(...args: any[]) {
+      super(...args)
+    }
+  }
+}
+
+console.log(withEZDebug())
