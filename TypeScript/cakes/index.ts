@@ -3,13 +3,17 @@
 // for the amounts(e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200).
 // Ingredients that are not present in the objects, can be considered as 0.
 
-const cakes = (recipe: any, available: any) => {
+interface Recipe {
+  [key: string]: number
+}
+
+const cakes = (recipe: Recipe, available: Recipe) => {
   const recipeArray = Object.keys(recipe)
   const availableArray = Object.keys(available)
   const ingredients = availableArray.filter((item) =>
     recipeArray.includes(item)
   )
-  let result = []
+  let result: number[] = []
   if (recipeArray.length > availableArray.length) return 0
   for (let key of ingredients) {
     result.push(available[key] / recipe[key])
