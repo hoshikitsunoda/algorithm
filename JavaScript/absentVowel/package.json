@@ -13,7 +13,7 @@
     "chai": "^4.2.0"
   },
   "dependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^10.2.0"
   },
   "description": ""
 }
